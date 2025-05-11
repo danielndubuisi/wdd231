@@ -43,14 +43,20 @@ main {
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-family: var(--secondary-font-family);
     color: var(--primary-color);
 }
 
 h2 {
     text-align: center;
+}
+
+h3 {
+    font-family: var(--primary-font-family);
+    color: var(--primary-dark-text-color);
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 li {
@@ -242,6 +248,13 @@ figcaption {
     width: 95%;
     text-align: center;
     padding-bottom: 1rem;
+}
+
+#credits {
+    color: var(--primary-dark-text-color);
+    font-weight: 600;
+    margin:1rem auto;
+    display: block;
 }
 
 .course-card {

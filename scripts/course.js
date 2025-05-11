@@ -67,21 +67,86 @@ const courses = [
     },
 ];
 
-const coursesContianer = document.querySelector(".courses")
+const coursesContainer = document.querySelector(".courses");
+const allBtn = document.querySelector("#all");
+const cseBtn = document.querySelector("#cse");
+const wddBtn = document.querySelector("#wdd");
+const credits = document.getElementById("credits");
 
-courses.forEach((course) => {
-    const courseCard = document.createElement("div");
-    courseCard.classList.add("course-card");
+// filter the courses
+const getFilteredCourses = (filter) => {
+    let filteredCourses = [];
+    let totalCredits = 0;
 
-    courseCard.innerHTML = `
-        <h3>${course.subject} ${course.number}</h3>
-    `;
-
-    if (course.completed) {
-        courseCard.classList.add("complete");
-    } else {
-        courseCard.classList.add("incomplete");
+    // filter based on type
+    switch (filter) {
+        case "cse":
+            filteredCourses = courses.filter(
+                (course) => course.subject === "CSE"
+            );
+            break;
+        case "wdd":
+            filteredCourses = courses.filter(
+                (course) => course.subject === "WDD"
+            );
+            break;
+        default:
+            filteredCourses = courses;
+            break;
     }
 
-    coursesContianer.appendChild(courseCard);
+    // get total credits with reduce
+    totalCredits = filteredCourses.reduce((acc, course) => {
+        return acc + course.credits;
+    }, 0);
+
+    return [filteredCourses, totalCredits];
+};
+
+// display courses and credits
+const displayCourses = (filtered, totalCredits) => {
+    // clear the courses container before displaying new courses
+    coursesContainer.innerHTML = "";
+
+    filtered.forEach((course) => {
+        const courseCard = document.createElement("div");
+        courseCard.classList.add("course-card");
+
+        courseCard.innerHTML = `
+            <h3>${course.subject} ${course.number}</h3>
+        `;
+
+        if (course.completed) {
+            courseCard.classList.add("complete");
+        } else {
+            courseCard.classList.add("incomplete");
+        }
+
+        coursesContainer.appendChild(courseCard);
+    });
+    // display total credits
+    credits.textContent = `The total number of credits required is ${totalCredits}`;
+};
+
+// initialize the page with all courses
+const [allCourses, totalCredits] = getFilteredCourses("all");
+displayCourses(allCourses, totalCredits);
+
+// add event listeners to button
+allBtn.addEventListener("click", () => {
+    const filtered = getFilteredCourses("all")[0];
+    const totalCredits = getFilteredCourses("all")[1];
+    displayCourses(filtered, totalCredits);
+});
+
+cseBtn.addEventListener("click", () => {
+    const filtered = getFilteredCourses("cse")[0];
+    const totalCredits = getFilteredCourses("cse")[1];
+    displayCourses(filtered, totalCredits);
+});
+
+wddBtn.addEventListener("click", () => {
+    const filtered = getFilteredCourses("wdd")[0];
+    const totalCredits = getFilteredCourses("wdd")[1];
+    displayCourses(filtered, totalCredits);
 });
