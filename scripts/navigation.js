@@ -11,7 +11,6 @@ const setActiveLink = () => {
     // if currentPage is empty or index, set it to index.html
     const activeLink =
         currentPage === "" || currentPage === "index" ? "Home" : currentPage;
-    console.log(activeLink);
 
     navLinks.forEach((link) => {
         const linkPage = link.getAttribute("href");

@@ -2,6 +2,7 @@
 @media screen and (min-width: 759px) {
     main {
         margin: 0 4rem;
+        max-width: 1200px; /* Add a max-width for better readability */
     }
 
     header {
@@ -24,7 +25,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0 3rem ;
+        margin: 0 3rem;
+        gap: 1rem; /* Add spacing between navigation items */
     }
 
     .cards {
@@ -36,6 +38,7 @@
     section {
         width: 100%;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        padding: 1rem; /* Add padding for better spacing */
     }
 
     section:last-child {
@@ -44,11 +47,15 @@
 
     .courses {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Make grid responsive */
         gap: 1rem;
     }
 
     footer p {
         font-size: 1rem;
+    }
+
+    footer {
+        padding: 1.5rem; /* Add padding for better spacing */
     }
 }

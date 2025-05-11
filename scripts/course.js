@@ -132,7 +132,7 @@ const displayCourses = (filtered, totalCredits) => {
 const [allCourses, totalCredits] = getFilteredCourses("all");
 displayCourses(allCourses, totalCredits);
 
-// add event listeners to button
+// add event listeners to buttons
 allBtn.addEventListener("click", () => {
     const filtered = getFilteredCourses("all")[0];
     const totalCredits = getFilteredCourses("all")[1];
