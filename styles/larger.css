@@ -32,7 +32,9 @@
     .cards {
         display: grid;
         gap: 1rem;
-        grid-template: 1fr 1fr / 2fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+        justify-content: center;
+        margin: 0 auto;
     }
 
     section {
