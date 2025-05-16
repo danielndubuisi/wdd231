@@ -1,0 +1,61 @@
+:root {
+    --primary-font-family: "Poppins", sans-serif;
+    --secondary-font-family: "Roboto", sans-serif;
+    --primary-color: #321c90;
+    --primary-background-color: #c0bae1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--secondary-font-family);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--primary-font-family);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    background-color: rgb(211, 211, 211);
+    padding: 1rem;
+    margin: 0.2rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 2px -2px 19px 4px rgba(0, 0, 0, 0.4);
+}
+
+section {
+    padding: 1rem;
+    background-color: var(--primary-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+section img {
+    box-shadow: 2px -2px 19px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 0.1rem;
+    margin-top: 0.2rem;
+}
+
+section p {
+    text-align: center;
+    font-weight: 500;
+}
+
+footer {
+    margin-top: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
