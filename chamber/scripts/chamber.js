@@ -23,6 +23,9 @@ const displayMembers = (members) => {
         let phone = document.createElement("p");
         let url = document.createElement("p");
 
+        // add a class to card
+        card.classList.add("card");
+
         // provide values
         heading.textContent = `${member.name}`;
         subHeading.textContent = `${member.tagLine}`;
