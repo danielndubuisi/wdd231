@@ -112,7 +112,7 @@ li a {
     background-color: transparent;
     color: var(--primary-light-color);
     cursor: pointer;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 #menu::before {
