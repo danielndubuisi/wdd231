@@ -1,0 +1,40 @@
+/* responsive styles for larger screens */
+@media screen and (min-width: 759px) {
+    main {
+        margin: 0 auto;
+        padding: 0 4rem 1rem;
+    }
+
+    header {
+        gap: 4rem;
+        padding: 1rem 4rem;
+    }
+
+    .logo-text {
+        width: 200px;
+    }    
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row-reverse;
+        width: 100%;
+        padding: 0.6rem 1rem;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 1rem;
+        gap: 1rem;
+    }
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem 4rem;
+    }
+}
