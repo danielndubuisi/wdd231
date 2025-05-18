@@ -211,6 +211,19 @@ nav ul.show {
     margin: 1rem;
 }
 
+.view-menu {
+	margin: 1rem auto;
+	border: 1px solid rgb(0 0 0 / 0.1);
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.view-menu button {
+    margin-top: 0.5rem;
+	padding: 1rem;
+	font-weight: 700;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -304,6 +317,29 @@ section > div {
 .contact b {
     font-size: 0.7rem;
 }
+
+/* list menu display */
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list .card .details {
+	display: none;
+}
+
+.list .card hr {
+	display: none;
+}
+
+.list section h3 {
+	font-size: 1rem;
+}
+
+.list section:nth-child(even) {
+	background-color: #bbb;
+}
+
 
 /* footer styles */
 footer {

@@ -1,9 +1,10 @@
-// This file contains the navigation functionality for the website.
 const navLinks = document.querySelectorAll(".nav-link");
 const nav = document.querySelector("nav");
 const ul = document.querySelector("ul");
 const menuBtn = document.querySelector("#menu");
 const wayfinder = document.querySelector(".heading");
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
 const cards = document.querySelector(".cards");
 
 const getMembersData = async () => {
@@ -105,4 +106,16 @@ menuBtn.addEventListener("click", () => {
             menuBtn.classList.toggle("show");
         }
     });
+});
+
+// toggle grid and list view
+gridbutton.addEventListener("click", () => {
+    // display grid view
+    cards.classList.add("cards");
+    cards.classList.remove("list");
+});
+
+listbutton.addEventListener("click", () => {
+    cards.classList.add("list");
+    cards.classList.remove("grid");
 });
