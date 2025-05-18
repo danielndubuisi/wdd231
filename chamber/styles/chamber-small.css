@@ -6,7 +6,7 @@
     --primary-background-color: #2b4b65;
     --primary-light-color: #fff;
     --primary-text-color: #000;
-    --primary-grey-bg: #dedede;
+    --primary-grey-bg: #d7d7d7dd;
 }
 
 * {
@@ -49,7 +49,8 @@ h3 {
 }
 
 h3 {
-    font-size: 1.2rem;
+    text-align: center;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 
@@ -90,7 +91,7 @@ li a {
     box-shadow: -2px -8px 12px 5px rgba(0, 0, 0, 0.263);
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -146,6 +147,11 @@ nav.show {
     padding: 2rem;
     height: 100vh;
     z-index: 99;
+    transition: all 0.4s ease-in;
+}
+
+nav.show img {
+    display: none;
 }
 
 nav ul {
@@ -170,9 +176,31 @@ nav ul.show {
 }
 
 /* main styles */
+.hero {
+    position: relative;
+}
+
 .hero img {
     width: 100%;
     height: auto;
+    object-fit: cover;
+}
+
+.keynote-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.keynote-btn:hover {
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .heading {
@@ -191,17 +219,90 @@ nav ul.show {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
     background-color: var(--primary-grey-bg);
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
+.card p {
+    font-size: 0.9rem;
+}
+
+.card p span {
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+.card small {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
 section {
     width: 100%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    padding: 1rem;
     margin-bottom: 1rem;
+    min-height: 100px;
+}
+
+section h2 {
+    background-color: var(--primary-background-color);
+    color: var(--primary-light-color);
+    padding: 0 0.5rem;
+}
+
+section > div {
+    padding: 1rem 0.5rem;
+}
+
+.weather > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.weather > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.forecast > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.forecast > div span {
+    font-weight: 600;
+}
+
+.details {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.details img {
+    width: 45px;
+    height: 50px;
+    object-fit: cover;
+    margin-top: 0.3rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact b {
+    font-size: 0.7rem;
 }
 
 /* footer styles */
@@ -223,7 +324,6 @@ footer p {
 .socials {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 0.5rem;
     width: 100px;
 }

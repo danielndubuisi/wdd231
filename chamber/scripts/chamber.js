@@ -19,27 +19,42 @@ const displayMembers = (members) => {
         let heading = document.createElement("h3");
         let subHeading = document.createElement("small");
         let line = document.createElement("hr");
+        let details = document.createElement("div");
+        let content = document.createElement("div");
+        let memberImg = document.createElement("img");
         let email = document.createElement("p");
         let phone = document.createElement("p");
         let url = document.createElement("p");
 
-        // add a class to card
+        // add classes to card
         card.classList.add("card");
+        details.classList.add("details");
+        content.classList.add("contact");
 
         // provide values
         heading.textContent = `${member.name}`;
         subHeading.textContent = `${member.tagLine}`;
+        memberImg.setAttribute("src", "images/company.webp");
+        memberImg.setAttribute("alt", "company-img");
+        memberImg.setAttribute("loading", "lazy");
         email.innerHTML = `<b>EMAIL</b>: <span>${member.email}</span>`;
         phone.innerHTML = `<b>PHONE</b>: <span>${member.phone}</span>`;
         url.innerHTML = `<b>URL</b>: <span>${member.website}</span>`;
+
+        // append content to card contact
+        content.append(email);
+        content.append(phone);
+        content.append(url);
+
+        // append details to card details div
+        details.append(memberImg);
+        details.append(content);
 
         // append to card
         card.append(heading);
         card.append(subHeading);
         card.append(line);
-        card.append(email);
-        card.append(phone);
-        card.append(url);
+        card.append(details);
 
         // append card to cards div
         cards.append(card);
