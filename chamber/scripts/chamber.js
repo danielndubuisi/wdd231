@@ -38,9 +38,9 @@ const displayMembers = (members) => {
         memberImg.setAttribute("src", "images/company.webp");
         memberImg.setAttribute("alt", "company-img");
         memberImg.setAttribute("loading", "lazy");
-        email.innerHTML = `<b>EMAIL</b>: <span>${member.email}</span>`;
-        phone.innerHTML = `<b>PHONE</b>: <span>${member.phone}</span>`;
-        url.innerHTML = `<b>URL</b>: <span>${member.website}</span>`;
+        email.innerHTML = `<b>EMAIL:</b> <span>${member.email}</span>`;
+        phone.innerHTML = `<b>PHONE:</b> <span>${member.phone}</span>`;
+        url.innerHTML = `<b>URL:</b> <span>${member.website}</span>`;
 
         // append content to card contact
         content.append(email);

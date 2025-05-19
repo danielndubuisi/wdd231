@@ -212,7 +212,7 @@ nav ul.show {
 }
 
 .view-menu {
-	margin: 1rem auto;
+	margin: 1rem;
 	border: 1px solid rgb(0 0 0 / 0.1);
 	padding: 0.5rem;
 	text-align: center;
@@ -324,7 +324,11 @@ section > div {
 	flex-direction: column;
 }
 
-.list .card .details {
+.list .card .details img {
+	display: none;
+}
+
+.list .card .details .contact {
 	display: none;
 }
 
@@ -339,7 +343,6 @@ section > div {
 .list section:nth-child(even) {
 	background-color: #bbb;
 }
-
 
 /* footer styles */
 footer {
