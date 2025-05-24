@@ -93,11 +93,6 @@
     .keynote-btn {
         bottom: 40px;
         right: 40px;
-        border: none;
-        border-radius: 0.5rem;
-        padding: 0.5rem;
-        font-size: 0.7rem;
-        font-weight: 600;
     }
 
     footer {

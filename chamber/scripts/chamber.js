@@ -67,9 +67,13 @@ getMembersData();
 
 // set wayfinder and activelink based on current page
 const setActiveLink = () => {
-    const currentPage = window.location.pathname.split("/").pop();
-    // if currentPage is directory, set it to index.html
-    const activeLink = currentPage === "directory.html" ? "Home" : currentPage;
+    let currentPage = window.location.pathname.split("/").pop();
+    // if currentPage is empty, set it to index.html
+    if (currentPage === "") {
+        currentPage = "index.html";
+    }
+
+    const activeLink = currentPage === "index.html" ? "Home" : currentPage;
 
     navLinks.forEach((link) => {
         const linkPage = link.getAttribute("href");
