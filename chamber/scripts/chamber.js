@@ -1,3 +1,7 @@
+// import modules
+import displayWeather from "./weather.mjs";
+
+// select elements
 const navLinks = document.querySelectorAll(".nav-link");
 const nav = document.querySelector("nav");
 const ul = document.querySelector("ul");
@@ -123,3 +127,6 @@ listbutton.addEventListener("click", () => {
     cards.classList.add("list");
     cards.classList.remove("grid");
 });
+
+// get current weather
+displayWeather();
