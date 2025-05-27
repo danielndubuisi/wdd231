@@ -1,5 +1,6 @@
 // import modules
 import displayWeather from "./weather.mjs";
+import getMembersData from "./cards.mjs";
 
 // select elements
 const navLinks = document.querySelectorAll(".nav-link");
@@ -11,70 +12,29 @@ const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const cards = document.querySelector(".cards");
 
-const getMembersData = async () => {
-    const response = await fetch("data/members.json");
-    const data = await response.json();
-    displayMembers(data.companies);
-};
+// get current weather
+displayWeather();
 
-const displayMembers = (members) => {
-    members.forEach((member) => {
-        // create card elements
-        let card = document.createElement("div");
-        let heading = document.createElement("h3");
-        let subHeading = document.createElement("small");
-        let line = document.createElement("hr");
-        let details = document.createElement("div");
-        let content = document.createElement("div");
-        let memberImg = document.createElement("img");
-        let email = document.createElement("p");
-        let phone = document.createElement("p");
-        let url = document.createElement("p");
+// toggle grid and list view
+gridbutton.addEventListener("click", () => {
+    // display grid view
+    cards.classList.add("cards");
+    cards.classList.remove("list");
+});
 
-        // add classes to card
-        card.classList.add("card");
-        details.classList.add("details");
-        content.classList.add("contact");
-
-        // provide values
-        heading.textContent = `${member.name}`;
-        subHeading.textContent = `${member.tagLine}`;
-        memberImg.setAttribute("src", "images/company.webp");
-        memberImg.setAttribute("alt", "company-img");
-        memberImg.setAttribute("loading", "lazy");
-        email.innerHTML = `<b>EMAIL:</b> <span>${member.email}</span>`;
-        phone.innerHTML = `<b>PHONE:</b> <span>${member.phone}</span>`;
-        url.innerHTML = `<b>URL:</b> <span>${member.website}</span>`;
-
-        // append content to card contact
-        content.append(email);
-        content.append(phone);
-        content.append(url);
-
-        // append details to card details div
-        details.append(memberImg);
-        details.append(content);
-
-        // append to card
-        card.append(heading);
-        card.append(subHeading);
-        card.append(line);
-        card.append(details);
-
-        // append card to cards div
-        cards.append(card);
-    });
-};
-
-// fetch and display members
-getMembersData();
+listbutton.addEventListener("click", () => {
+    cards.classList.add("list");
+    cards.classList.remove("grid");
+});
 
 // set wayfinder and activelink based on current page
 const setActiveLink = () => {
     let currentPage = window.location.pathname.split("/").pop();
     // if currentPage is empty, set it to index.html
-    if (currentPage === "") {
+    if (currentPage === "" || currentPage === "index.html") {
         currentPage = "index.html";
+        // fetch and display gold and silver members only
+        getMembersData(true);
     }
 
     const activeLink = currentPage === "index.html" ? "Home" : currentPage;
@@ -83,6 +43,7 @@ const setActiveLink = () => {
         const linkPage = link.getAttribute("href");
         if (activeLink === linkPage) {
             link.classList.add("active");
+            getMembersData(false); // fetch and display all members
             wayfinder.textContent = link.textContent;
         } else if (activeLink === "Home") {
             wayfinder.textContent = "Home";
@@ -115,18 +76,3 @@ menuBtn.addEventListener("click", () => {
         }
     });
 });
-
-// toggle grid and list view
-gridbutton.addEventListener("click", () => {
-    // display grid view
-    cards.classList.add("cards");
-    cards.classList.remove("list");
-});
-
-listbutton.addEventListener("click", () => {
-    cards.classList.add("list");
-    cards.classList.remove("grid");
-});
-
-// get current weather
-displayWeather();
