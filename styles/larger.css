@@ -60,6 +60,16 @@
         gap: 1rem;
     }
 
+    dialog {
+        max-width: 600px; /* Limit the maximum width */
+        padding: 1rem; /* Add padding for better spacing */
+    }
+
+    dialog button {
+        top: 21px;
+        right: 22px;
+    }
+
     footer p {
         font-size: 1rem;
     }

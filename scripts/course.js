@@ -72,6 +72,7 @@ const allBtn = document.querySelector("#all");
 const cseBtn = document.querySelector("#cse");
 const wddBtn = document.querySelector("#wdd");
 const credits = document.getElementById("credits");
+const modal = document.querySelector("#course-details");
 
 // filter the courses
 const getFilteredCourses = (filter) => {
@@ -113,7 +114,7 @@ const displayCourses = (filtered, totalCredits) => {
         courseCard.classList.add("course-card");
 
         courseCard.innerHTML = `
-            <h3>${course.subject} ${course.number}</h3>
+        <h3>${course.subject} ${course.number}</h3>
         `;
 
         if (course.completed) {
@@ -122,10 +123,29 @@ const displayCourses = (filtered, totalCredits) => {
             courseCard.classList.add("incomplete");
         }
 
+        // display course details as modal if card clicked
+        courseCard.addEventListener("click", () => {
+            displayModal(course);
+        });
+
         coursesContainer.appendChild(courseCard);
     });
     // display total credits
     credits.textContent = `The total number of credits required is ${totalCredits}`;
+};
+
+// display modal
+const displayModal = (course) => {
+    modal.innerHTML = `<div class="modal-content">
+    <button class="close" onclick="modal.close()">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p>${course.credits} credits</p>
+    <p>Certificate: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p>Technologies: ${course.technology.join(", ")}</p>
+    </div>`;
+    modal.showModal();
 };
 
 // initialize the page with all courses

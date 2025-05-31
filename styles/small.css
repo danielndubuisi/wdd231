@@ -277,10 +277,11 @@ figcaption {
     border-radius: 0.2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     width: 100%;
-    max-width: 300px; 
-    min-width: 250px; 
+    max-width: 300px;
+    min-width: 250px;
     height: 45px;
-    margin: 1rem auto; 
+    margin: 1rem auto;
+    cursor: pointer;
 }
 
 .complete {
@@ -291,6 +292,41 @@ figcaption {
 .incomplete {
     background-color: var(--secondary-grey-bg);
     color: #fff;
+}
+
+/* modal styles */
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-light-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    width: 90%;
+    min-width: 300px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 /* footer styles */
