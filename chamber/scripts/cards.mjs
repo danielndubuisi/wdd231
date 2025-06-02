@@ -51,7 +51,13 @@ const displayMembers = (members) => {
         address.innerHTML = `<b>ADDRESS:</b> <span>${member.address}</span>`;
         phone.innerHTML = `<b>PHONE:</b> <span>${member.phone}</span>`;
         url.innerHTML = `<b>WEBSITE:</b> <span>${member.website}</span>`;
-        level.innerHTML = `<b>MEMBERSHIP LEVEL:</b> <span>${member.membershipLevel === 1 ? "Gold" : member.membershipLevel === 2 ? "Silver" : "Bronze"}</span>`;
+        level.innerHTML = `<b>MEMBERSHIP LEVEL:</b> <span>${
+            member.membershipLevel === 1
+                ? "Gold"
+                : member.membershipLevel === 2
+                ? "Silver"
+                : "Bronze"
+        }</span>`;
 
         // append content to card contact
         content.append(phone);
@@ -70,7 +76,9 @@ const displayMembers = (members) => {
         card.append(details);
 
         // append card to cards div
-        cards.append(card);
+        if (cards) {
+            cards.append(card);
+        }
     });
 };
 

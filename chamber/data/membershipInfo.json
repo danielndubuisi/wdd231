@@ -1,0 +1,53 @@
+{
+    "levels": [
+        {
+            "id": "4",
+            "name": "Non-Profit Membership",
+            "price": 0,
+            "description": "Designed for registered non-profit organizations.",
+            "benefits": [
+                "Access to standard events",
+                "Basic training sessions",
+                "Newsletter subscription"
+            ]
+        },
+        {
+            "id": "3",
+            "name": "Bronze Membership",
+            "price": 49,
+            "description": "A great starting point for individuals or small teams.",
+            "benefits": [
+                "Access to all events",
+                "Discounted training sessions",
+                "Basic advertising listing",
+                "Newsletter subscription"
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Silver Membership",
+            "price": 99,
+            "description": "Perfect for growing businesses looking for more exposure.",
+            "benefits": [
+                "All Bronze benefits",
+                "Free training sessions",
+                "Spotlight placement on home page (monthly)",
+                "10% event discount",
+                "Priority support"
+            ]
+        },
+        {
+            "id": "1",
+            "name": "Gold Membership",
+            "price": 199,
+            "description": "Maximum exposure and premium features for top-tier members.",
+            "benefits": [
+                "All Silver benefits",
+                "Exclusive invite-only events",
+                "Weekly spotlight placement on home page",
+                "20% event discount",
+                "Dedicated account manager"
+            ]
+        }
+    ]
+}
