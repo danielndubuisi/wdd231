@@ -9,7 +9,9 @@ const displayMembershipDetails = async () => {
     const levels = await getMembershipInfo();
 
     // update the details container with membership levels
-    detailsContainer.innerHTML = levels
+    detailsContainer.innerHTML = `
+        <h2>Membership Levels</h2>`;
+    detailsContainer.innerHTML += levels
         .map(
             (level, idx) => `
                     <div class="card">
@@ -34,10 +36,12 @@ const displayMembershipDetails = async () => {
             const level = levels[idx];
             modal.innerHTML = `
                 <button class="close">❌</button>
-                <h3>${level.name}</h3>
-                <p>${level.description}</p>
-                <p>Benefits: ${level.benefits.join(", ")}</p>
-                <p>Price: $${level.price}</p>
+                <div class="modal-content">
+                    <h3>${level.name}</h3>
+                    <p><b>Description</b>: ${level.description}</p>
+                    <p><b>Benefits </b>: ${level.benefits.join(", ")}</p>
+                    <p><b>Price</b>: $${level.price}</p>
+                </div>
             `;
             // handle close button
             document.querySelector(".close").addEventListener("click", () => {

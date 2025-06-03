@@ -95,6 +95,20 @@
         right: 40px;
     }
 
+    .join-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .membership-details {
+        margin-top: 0.8rem;
+        gap: 2rem;
+    }
+
     footer {
         flex-direction: row;
         align-items: center;
