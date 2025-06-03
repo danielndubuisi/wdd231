@@ -2,6 +2,7 @@
 import displayWeather from "./weather.mjs";
 import getMembersData from "./cards.mjs";
 import displayMembershipDetails from "./membership.mjs";
+import displayFormInfo from "./thankyou.mjs";
 
 // select elements
 const navLinks = document.querySelectorAll(".nav-link");
@@ -12,6 +13,7 @@ const wayfinder = document.querySelector(".heading");
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const cards = document.querySelector(".cards");
+const timestamp = document.querySelector("#timestamp");
 
 // get current weather (only if function exists)
 if (typeof displayWeather === "function" && cards) {
@@ -86,3 +88,13 @@ if (menuBtn && nav && ul) {
 });
 
 displayMembershipDetails();
+
+// set timestamp to date and time form loaded by user
+if (timestamp) {
+    timestamp.setAttribute("value", `${new Date()}`)
+}
+
+// show form information on thankyou page
+if (typeof displayFormInfo == "function") {
+    displayFormInfo();
+}
