@@ -1,0 +1,52 @@
+{
+    "places": [
+        {
+            "name": "Djinguereber Mosque",
+            "address": "Askia Mohamed Blvd, Timbuktu, Mali",
+            "description": "The oldest and largest of Timbuktu’s three great mud‑brick mosques, built 1327. A UNESCO World Heritage site and center of learning at the University of Timbuktu.",
+            "photo_url": "djim-mosque.webp"
+        },
+        {
+            "name": "Sankoré Madrasah",
+            "address": "North East district, Timbuktu, Mali",
+            "description": "14th‑century mosque that developed into a madrasa, part of the University of Timbuktu. Famous for its courtyard and ancient teaching tradition.",
+            "photo_url": "sankore.webp"
+        },
+        {
+            "name": "Sidi Yahya Mosque",
+            "address": "Rue de l’Indépendance, Timbuktu, Mali",
+            "description": "Constructed 1400–1440, this mosque and madrasa is part of the University of Timbuktu. Its gate was famously sealed until the end of time.",
+            "photo_url": "sidi-yahya.webp"
+        },
+        {
+            "name": "Ahmed Baba Institute",
+            "address": "Sankoré precinct, Timbuktu, Mali",
+            "description": "Research library preserving some 20,000 ancient manuscripts (14th–16th century). Opened in 2009, houses modern digitization and conservation facilities.",
+            "photo_url": "ahmed-baba.webp"
+        },
+        {
+            "name": "Ethnological Museum of Timbuktu",
+            "address": "Just south of Sidi Yahya Mosque, Timbuktu, Mali",
+            "description": "Displays local Neolithic, Tuareg, and Songhai artifacts. Includes traditional well, and offers insight into cultural history.",
+            "photo_url": "museum-timbuktu.webp"
+        },
+        {
+            "name": "Musée Mansour Kore",
+            "address": "East of Djinguereber Mosque, Timbuktu, Mali",
+            "description": "Housed in a restored traditional mud‑brick home, exhibiting daily‑life artifacts—furniture, tools, displays of historical significance.",
+            "photo_url": "mansour-kore.webp"
+        },
+        {
+            "name": "La Maison des Artisans",
+            "address": "Across from Petit Marché, Timbuktu, Mali",
+            "description": "Artisan centre showcasing traditional ironwork, leather, weaving. Visitors can watch craftsmen at work and buy silver jewelry, leather goods.",
+            "photo_url": "maison-de-artisans.webp"
+        },
+        {
+            "name": "Camel Trek to Sahara Nomad Camp",
+            "address": "Departing from Timbuktu outskirts",
+            "description": "Guided camel ride into the Sahara to visit a Tuareg nomad camp—experience desert life, dunes, traditional songs and meals.",
+            "photo_url": "camel-trek.webp"
+        }
+    ]
+}

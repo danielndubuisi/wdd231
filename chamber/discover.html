@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Daniel Ndubuisi" />
+        <meta
+            name="description"
+            content="This is the discover page of the chamber of commerce site for WDD 231 - Web Frontend Development by Daniel Ndubuisi.
+            "
+        />
+        <title>Discover Timbuktu Chamber of Commerce</title>
+        <!-- normalize css -->
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <!-- google font -->
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+            crossorigin
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- favicon -->
+        <link rel="icon" href="favicon.ico" />
+        <!-- social media meta -->
+        <meta property="og:title" content="Timbuktu Chamber of Commerce" />
+        <meta
+            property="og:description"
+            content="This website will serve as a resource hub for businesses in the city of Timbuktu. It provides information on local events, networking opportunities and creating business directories to encourage local shopping."
+        />
+        <meta
+            property="og:image"
+            content="https://avatars.githubusercontent.com/u/97972130?v=4"
+        />
+        <meta
+            property="og:url"
+            content="https://danielndubuisi.github.io/wdd231/chamber/discover.html"
+        />
+
+        <!-- styles -->
+        <link rel="stylesheet" href="styles/chamber-small.css" />
+        <link rel="stylesheet" href="styles/chamber-medium.css" />
+        <link rel="stylesheet" href="styles/chamber-large.css" />
+        <!-- scripts -->
+        <script type="module" src="scripts/chamber.js"></script>
+        <script src="../scripts/date.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <!-- My logo -->
+            <div class="logo">
+                <img src="images/logo.webp" alt="website-logo" />
+                <div class="logo-text">
+                    <span>Timbuktu</span>
+                    <small>Chamber of Commerce</small>
+                </div>
+            </div>
+            <nav>
+                <!-- theme icon -->
+                <img src="images/dark-mode-icon.webp" alt="dark-mode-icon" />
+                <!-- menu icon -->
+                <button id="menu" aria-label="menu-button"></button>
+                <!-- page navigation -->
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li>
+                        <a href="directory.html" class="nav-link">Directory</a>
+                    </li>
+                    <li><a href="join.html" class="nav-link">Join</a></li>
+                    <li>
+                        <a href="discover.html" class="nav-link">Discover</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="heading"></h1>
+            <div class="places-container">
+            </div>
+        </main>
+        <footer>
+            <div class="contact-info">
+                <h4>Timbuktu Chamber of Commerce</h4>
+                <p>
+                    10 Rue De La Paix <br />Timbuktu, Mali 999
+                    <br />info@timbuktucc.org <br />(223) 555-2300
+                </p>
+            </div>
+            <div class="socials">
+                <img src="images/youtube.webp" alt="youtube" />
+                <img src="images/twitter.webp" alt="twitter" />
+                <img src="images/linkedin.webp" alt="linkedIn" />
+            </div>
+            <div>
+                <p>WDD231 Class Project</p>
+                <p>Daniel Tochukwu Ndubuisi</p>
+                <p>
+                    &copy;<span id="currentyear"> </span
+                    ><span> Timbuktu Chamber of Commerce</span>
+                </p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+    </body>
+</html>

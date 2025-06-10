@@ -1,0 +1,15 @@
+/* for screens between 641px to 1024px */
+@media screen and (min-width: 641px) {
+    /* discover page styles */
+    .place-card {
+        grid-template-areas:
+            "title title"
+            "figure description"
+            "figure address"
+            "button button";
+    }
+
+    .place-card img {
+        width: 300px;
+    }
+}
