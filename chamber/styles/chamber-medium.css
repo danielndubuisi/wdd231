@@ -12,4 +12,18 @@
     .place-card img {
         width: 300px;
     }
+
+    .place-card img:hover {
+        cursor: pointer;
+        /* opacity: 0.8; */
+        filter: blur(1px) grayscale(30%);
+        transition: filter 0.3s ease-in;
+    }
+
+    /* user message styles */
+    #visit {
+        margin: 0 auto 2rem auto;
+        max-width: 300px;
+        animation: slide-in 1s ease-in-out;
+    }
 }

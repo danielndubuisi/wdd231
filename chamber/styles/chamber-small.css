@@ -588,6 +588,7 @@ dialog button {
 
 .place-card img {
     width: 100%;
+    min-width: 300px;
     height: auto;
     object-fit: cover;
 }
@@ -595,6 +596,41 @@ dialog button {
 .place-card figcaption {
     font-size: 0.8rem;
     text-align: center;
+}
+
+/* user message styles */
+#visit {
+    margin: 0 auto 1.5rem auto;
+    max-width: 300px;
+    animation: slide-in 1s ease-in-out;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.visit-card {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: rgb(184, 218, 246);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.visit-card p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 1em;
 }
 
 /* thank you page styles */

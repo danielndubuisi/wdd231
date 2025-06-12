@@ -18,7 +18,7 @@ const displayPlaces = async () => {
         <div class="place-card">
             <h2>${place.name}</h2>
             <figure>
-                <img src="images/${place.photo_url}" alt="${place.name}" class="place-image">
+                <img src="images/${place.photo_url}" alt="${place.name}" class="place-image" width="300" height="200">
                 <figcaption>${place.name}</figcaption>
             </figure>
             <p>${place.description}</p>
