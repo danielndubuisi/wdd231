@@ -1,0 +1,70 @@
+{
+    "playlists": [
+        {
+            "title": "Indie Bloom",
+            "description": "Fresh indie tracks that deserve more ears.",
+            "image": "indie-bloom.webp",
+            "popularity": 78
+        },
+        {
+            "title": "Code & Chill",
+            "description": "Ambient sounds for deep focus while coding.",
+            "image": "code-chill.webp",
+            "popularity": 92
+        },
+        {
+            "title": "Mindset is Everything",
+            "description": "Uplifting tunes and powerful beats to fuel your growth mindset.",
+            "image": "mindset.webp",
+            "popularity": 93
+        },
+        {
+            "title": "Vibe Lounge",
+            "description": "Smooth beats to wind down your day.",
+            "image": "vibe-lounge.webp",
+            "popularity": 87
+        },
+        {
+            "title": "Midnight Drive",
+            "description": "Synthwave and chillhop for late-night cruising.",
+            "image": "midnight-drive.webp",
+            "popularity": 85
+        },
+        {
+            "title": "Retro Rewind",
+            "description": "Throwbacks from the '80s and '90s that still slap.",
+            "image": "retro-rewind.webp",
+            "popularity": 90
+        },
+        {
+            "title": "Acoustic Mornings",
+            "description": "Soft guitars and warm vocals to start your day.",
+            "image": "acoustic-mornings.webp",
+            "popularity": 81
+        },
+        {
+            "title": "Global Grooves",
+            "description": "A rhythmic ride through sounds from around the world.",
+            "image": "global-grooves.webp",
+            "popularity": 74
+        },
+        {
+            "title": "Bass Mode",
+            "description": "Heavy drops, deep bass, pure energy.",
+            "image": "bass-mode.webp",
+            "popularity": 95
+        },
+        {
+            "title": "Lo-Fi & Letters",
+            "description": "Lo-fi hip hop paired perfectly with journaling or reading.",
+            "image": "lofi-letters.webp",
+            "popularity": 88
+        },
+        {
+            "title": "Sunset Frequencies",
+            "description": "Warm, dreamy tracks to match golden hour vibes.",
+            "image": "sunset-frequencies.webp",
+            "popularity": 83
+        }
+    ]
+}
