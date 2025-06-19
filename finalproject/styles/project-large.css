@@ -61,6 +61,46 @@
         gap: 1rem;
     }
 
+    /* discover page styles */
+    .discover-page {
+        background-image: none;
+    }
+    .discover-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        align-items: stretch;
+        width: 80%;
+        margin: 0 auto;
+        background: var(--primary-dark-background);
+        border-radius: 1.2rem;
+        box-shadow: 0 4px 32px rgba(0, 0, 0, 0.18);
+        overflow: hidden;
+    }
+
+    .discover-img {
+        display: block;
+    }
+
+    .discover-grid img {
+        width: 100%;
+        height: 100%;
+        min-height: 350px;
+        max-height: 600px;
+        object-fit: cover;
+        border-radius: 0;
+        display: block;
+    }
+
+    .discover-grid .discover-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2.5rem 2.5rem 2.5rem 2rem;
+        color: #fff;
+        background: none;
+        height: 100%;
+    }
+
     /* feedback section styles */
     .feedback p {
         max-width: 400px;
@@ -191,6 +231,15 @@
     }
 
     /* Modal styles for large screens */
+    dialog {
+        max-width: 600px;
+        padding: 1rem;
+    }
+
+    dialog::backdrop {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
     .modal {
         display: none;
         position: fixed;
@@ -220,28 +269,5 @@
         box-shadow: 0 4px 32px rgba(0, 0, 0, 0.4);
         position: relative;
         animation: modalIn 0.3s;
-    }
-
-    @keyframes modalIn {
-        from {
-            transform: scale(0.8);
-            opacity: 0;
-        }
-        to {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-
-    .close-modal {
-        position: absolute;
-        top: 0.7rem;
-        right: 1.2rem;
-        background: none;
-        border: none;
-        color: #fff;
-        font-size: 2.2rem;
-        cursor: pointer;
-        z-index: 10;
     }
 }
