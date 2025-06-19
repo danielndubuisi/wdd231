@@ -28,7 +28,7 @@ const displayMembers = (members) => {
     const cards = document.querySelector(".cards");
     const cardTemplate = members
         .map(
-            (member) => `  <div class="card">
+            (member) => `<div class="card">
                             <div class="card-content">
                                 <img src="images/${member.image}" alt="featured-img" loading="lazy">
                                 <p><span>${member.title}</span> - ${member.description}</p>

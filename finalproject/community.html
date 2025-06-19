@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Daniel Ndubuisi" />
         <meta
             name="description"
             content="Join our SoundSphere community and get a chance to meet our CEO Daniel Ndubuisi.
-            "
-        />
+            " />
         <title>SoundSphere - Join Community</title>
         <!-- normalize css -->
         <link rel="stylesheet" href="styles/normalize.css" />
@@ -17,24 +16,20 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
-        />
+            rel="stylesheet" />
         <!-- favicon -->
         <link rel="icon" href="favicon.ico" />
         <!-- social media meta -->
         <meta property="og:title" content="SoundSphere" />
         <meta
             property="og:description"
-            content="Soundsphere is a music platform that allows users to discover, listen to, and share their favorite music tracks. It features a user-friendly interface, personalized playlists, and a vast library of songs across various genres. It was developed by Daniel Ndubuisi as a final project for WDD 231."
-        />
+            content="Soundsphere is a music platform that allows users to discover, listen to, and share their favorite music tracks. It features a user-friendly interface, personalized playlists, and a vast library of songs across various genres. It was developed by Daniel Ndubuisi as a final project for WDD 231." />
         <meta
             property="og:image"
-            content="https://avatars.githubusercontent.com/u/97972130?v=4"
-        />
+            content="https://avatars.githubusercontent.com/u/97972130?v=4" />
         <meta
             property="og:url"
-            content="https://danielndubuisi.github.io/wdd231/finalproject/community.html"
-        />
+            content="https://danielndubuisi.github.io/wdd231/finalproject/community.html" />
 
         <!-- styles -->
         <link rel="stylesheet" href="styles/project-small.css" />
@@ -76,29 +71,110 @@
         <!-- main content -->
         <main>
             <!-- form section -->
-            <div class="form-section">
+            <div class="community">
                 <h1>Our Community</h1>
                 <p>
-                    Join the SoundSphere community
+                    Join the SoundSphere community and start sharing your ideas,
+                    connect with fellow music lovers, get updates on the latest
+                    trends, and participate in discussions about your favorite
+                    genres.
                 </p>
-                <form id="community-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required />
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required />
-                    
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                    
-                    <button type="submit">Submit</button>
-                </form>
+                <div class="form-container">
+                    <!-- form -->
+                    <h2>New User Form</h2>
+                    <form method="get" action="thankyou.html" class="card" autocomplete="on">
+                        <fieldset>
+                            <legend>User Information</legend>
+                            <!-- first name -->
+                            <label
+                                ><span
+                                    >Full Name <small>(required)</small></span
+                                >
+                                <input
+                                    type="text"
+                                    name="fullname"
+                                    title="Full name"
+                                    required
+                                    autocomplete="name" />
+                            </label>
+                            <!-- last name -->
+                            <label
+                                ><span>Alias</span>
+                                <input
+                                    type="text"
+                                    name="alias"
+                                    title="Alias or other name"
+                                    autocomplete="username" />
+                            </label>
+                            <!-- email -->
+                            <label
+                                ><span
+                                    >Email Address
+                                    <small>(required)</small></span
+                                >
+                                <input
+                                    type="email"
+                                    name="email"
+                                    required
+                                    title="Email Address"
+                                    autocomplete="email"
+                                    placeholder="user@mail.com" />
+                            </label>
+                            <!-- phone number -->
+                            <label
+                                ><span
+                                    >Phone Number
+                                    <small>(required)</small></span
+                                >
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    required
+                                    title="Mobile Phone Number"
+                                    autocomplete="tel" />
+                            </label>
+                            <!-- genres -->
+                            <label
+                                ><span>Favorite Genre</span>
+                                <select name="level" id="level">
+                                    <option selected disabled>
+                                        Select genre
+                                    </option>
+                                    <option value="hip-hop">Hip Hop</option>
+                                    <option value="blues">Blues</option>
+                                    <option value="rock-roll">
+                                        Rock & Roll
+                                    </option>
+                                    <option value="pop">Pop</option>
+                                    <option value="jazz">Jazz</option>
+                                    <option value="afrobeat">Afrobeat</option>
+                                </select>
+                            </label>
+                            <!-- business description -->
+                            <label
+                                ><span>Leave a message</span>
+                                <textarea
+                                    name="description"
+                                    title="Description of the organization"></textarea>
+                            </label>
+                            <!-- timestamp -->
+                            <label>
+                                <input
+                                    type="hidden"
+                                    name="timestamp"
+                                    id="timestamp" />
+                            </label>
+                        </fieldset>
+                        <button type="submit">Join Us</button>
+                    </form>
+                </div>
+            </div>
         </main>
         <!-- footer -->
         <footer>
             <div class="contact-info">
                 <div class="contact-details">
-                    <p>info@soundsphere.org</p>    
+                    <p>info@soundsphere.org</p>
                 </div>
                 <div class="socials">
                     <img src="images/youtube.webp" alt="youtube" />
