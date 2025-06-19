@@ -135,9 +135,12 @@
         margin: 1.3rem 0;
     }
 
-    /* newsletter */
-    .newsletter {
-        width: 80%;
-        margin: 0 auto;
+    .contact-info {
+        max-width: 800px;
     }
+
+    .community {
+        width: 60%;
+        margin: 2rem auto;
+    }    
 }

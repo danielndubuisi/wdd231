@@ -4,67 +4,78 @@
             "title": "Indie Bloom",
             "description": "Fresh indie tracks that deserve more ears.",
             "image": "indie-bloom.webp",
-            "popularity": 78
+            "popularity": 78,
+            "featured": true
         },
         {
             "title": "Code & Chill",
             "description": "Ambient sounds for deep focus while coding.",
             "image": "code-chill.webp",
-            "popularity": 92
+            "popularity": 92,
+            "featured": true
         },
         {
-            "title": "Mindset is Everything",
-            "description": "Uplifting tunes and powerful beats to fuel your growth mindset.",
+            "title": "Mindset Vibes",
+            "description": "Powerful beats to fuel your growth mindset.",
             "image": "mindset.webp",
-            "popularity": 93
+            "popularity": 93,
+            "featured": true
         },
         {
             "title": "Vibe Lounge",
             "description": "Smooth beats to wind down your day.",
             "image": "vibe-lounge.webp",
-            "popularity": 87
+            "popularity": 87,
+            "featured": false
         },
         {
             "title": "Midnight Drive",
             "description": "Synthwave and chillhop for late-night cruising.",
             "image": "midnight-drive.webp",
-            "popularity": 85
+            "popularity": 85,
+            "featured": false
         },
         {
             "title": "Retro Rewind",
             "description": "Throwbacks from the '80s and '90s that still slap.",
             "image": "retro-rewind.webp",
-            "popularity": 90
+            "popularity": 90,
+            "featured": false
         },
         {
             "title": "Acoustic Mornings",
             "description": "Soft guitars and warm vocals to start your day.",
             "image": "acoustic-mornings.webp",
-            "popularity": 81
+            "popularity": 81,
+            "featured": false
         },
         {
             "title": "Global Grooves",
             "description": "A rhythmic ride through sounds from around the world.",
             "image": "global-grooves.webp",
-            "popularity": 74
+            "popularity": 74,
+            "featured": false
         },
         {
             "title": "Bass Mode",
             "description": "Heavy drops, deep bass, pure energy.",
             "image": "bass-mode.webp",
-            "popularity": 95
+            "popularity": 95,
+            "featured": false
         },
         {
             "title": "Lo-Fi & Letters",
             "description": "Lo-fi hip hop paired perfectly with journaling or reading.",
             "image": "lofi-letters.webp",
-            "popularity": 88
+            "popularity": 88,
+            "featured": false
         },
         {
             "title": "Sunset Frequencies",
             "description": "Warm, dreamy tracks to match golden hour vibes.",
             "image": "sunset-frequencies.webp",
-            "popularity": 83
+            "popularity": 83,
+            "featured": false
         }
     ]
 }
