@@ -1,81 +1,184 @@
 {
     "playlists": [
         {
-            "title": "Indie Bloom",
-            "description": "Fresh indie tracks that deserve more ears.",
-            "image": "indie-bloom.webp",
-            "popularity": 78,
-            "featured": true
-        },
-        {
-            "title": "Code & Chill",
-            "description": "Ambient sounds for deep focus while coding.",
-            "image": "code-chill.webp",
-            "popularity": 92,
-            "featured": true
-        },
-        {
-            "title": "Mindset Vibes",
-            "description": "Powerful beats to fuel your growth mindset.",
-            "image": "mindset.webp",
-            "popularity": 93,
-            "featured": true
-        },
-        {
-            "title": "Vibe Lounge",
-            "description": "Smooth beats to wind down your day.",
-            "image": "vibe-lounge.webp",
-            "popularity": 87,
-            "featured": false
-        },
-        {
+            "id": 1,
             "title": "Midnight Drive",
             "description": "Synthwave and chillhop for late-night cruising.",
             "image": "midnight-drive.webp",
             "popularity": 85,
-            "featured": false
+            "featured": false,
+            "artist": "Night Riders",
+            "year": 2023,
+            "genre": "Synthwave",
+            "duration": "1:05:00"
         },
         {
+            "id": 2,
             "title": "Retro Rewind",
             "description": "Throwbacks from the '80s and '90s that still slap.",
             "image": "retro-rewind.webp",
             "popularity": 90,
-            "featured": false
+            "featured": false,
+            "artist": "Time Machine DJs",
+            "year": 2020,
+            "genre": "Retro",
+            "duration": "1:40:00"
         },
         {
+            "id": 3,
             "title": "Acoustic Mornings",
             "description": "Soft guitars and warm vocals to start your day.",
             "image": "acoustic-mornings.webp",
             "popularity": 81,
-            "featured": false
+            "featured": false,
+            "artist": "Sunny Strings",
+            "year": 2024,
+            "genre": "Acoustic",
+            "duration": "1:10:00"
         },
         {
+            "id": 4,
             "title": "Global Grooves",
             "description": "A rhythmic ride through sounds from around the world.",
             "image": "global-grooves.webp",
             "popularity": 74,
-            "featured": false
+            "featured": false,
+            "artist": "World Beat",
+            "year": 2023,
+            "genre": "World",
+            "duration": "1:25:00"
         },
         {
+            "id": 5,
             "title": "Bass Mode",
             "description": "Heavy drops, deep bass, pure energy.",
             "image": "bass-mode.webp",
             "popularity": 95,
-            "featured": false
+            "featured": false,
+            "artist": "Bassline Bros",
+            "year": 2022,
+            "genre": "EDM",
+            "duration": "1:20:00"
         },
         {
+            "id": 6,
+            "title": "Indie Bloom",
+            "description": "Fresh indie tracks that deserve more ears.",
+            "image": "indie-bloom.webp",
+            "popularity": 78,
+            "featured": true,
+            "artist": "The Wildflowers",
+            "year": 2023,
+            "genre": "Indie Rock",
+            "duration": "1:12:00"
+        },
+        {
+            "id": 7,
+            "title": "Vibe Lounge",
+            "description": "Smooth beats to wind down your day.",
+            "image": "vibe-lounge.webp",
+            "popularity": 87,
+            "featured": false,
+            "artist": "Lounge Masters",
+            "year": 2021,
+            "genre": "Chillout",
+            "duration": "1:15:00"
+        },
+        {
+            "id": 8,
+            "title": "Code & Chill",
+            "description": "Ambient sounds for deep focus while coding.",
+            "image": "code-chill.webp",
+            "popularity": 92,
+            "featured": true,
+            "artist": "Synthwave Collective",
+            "year": 2024,
+            "genre": "Ambient",
+            "duration": "2:00:00"
+        },
+        {
+            "id": 9,
+            "title": "Mindset Vibes",
+            "description": "Powerful beats to fuel your growth mindset.",
+            "image": "mindset.webp",
+            "popularity": 93,
+            "featured": true,
+            "artist": "Motiv8",
+            "year": 2022,
+            "genre": "Hip Hop",
+            "duration": "1:30:00"
+        },
+        {
+            "id": 10,
             "title": "Lo-Fi & Letters",
             "description": "Lo-fi hip hop paired perfectly with journaling or reading.",
             "image": "lofi-letters.webp",
             "popularity": 88,
-            "featured": false
+            "featured": false,
+            "artist": "LoFi Collective",
+            "year": 2024,
+            "genre": "Lo-Fi",
+            "duration": "1:50:00"
         },
         {
+            "id": 11,
             "title": "Sunset Frequencies",
             "description": "Warm, dreamy tracks to match golden hour vibes.",
             "image": "sunset-frequencies.webp",
             "popularity": 83,
-            "featured": false
+            "featured": false,
+            "artist": "Dreamscape",
+            "year": 2023,
+            "genre": "Chillhop",
+            "duration": "1:18:00"
+        },
+        {
+            "id": 12,
+            "title": "Evergreen Jazz",
+            "description": "Classic and modern jazz for every mood.",
+            "image": "evergreen-jazz.webp",
+            "popularity": 80,
+            "featured": false,
+            "artist": "Jazz Ensemble",
+            "year": 2021,
+            "genre": "Jazz",
+            "duration": "1:35:00"
+        },
+        {
+            "id": 13,
+            "title": "Pop Parade",
+            "description": "Today's hottest pop hits in one playlist.",
+            "image": "pop-parade.webp",
+            "popularity": 89,
+            "featured": false,
+            "artist": "Pop Stars",
+            "year": 2024,
+            "genre": "Pop",
+            "duration": "1:22:00"
+        },
+        {
+            "id": 14,
+            "title": "Classical Calm",
+            "description": "Relaxing classical pieces for focus and peace.",
+            "image": "classical-calm.webp",
+            "popularity": 77,
+            "featured": false,
+            "artist": "Orchestra Nova",
+            "year": 2022,
+            "genre": "Classical",
+            "duration": "2:10:00"
+        },
+        {
+            "id": 15,
+            "title": "Hip Hop Heat",
+            "description": "The latest and greatest in hip hop.",
+            "image": "hiphop-heat.webp",
+            "popularity": 91,
+            "featured": false,
+            "artist": "Urban Flow",
+            "year": 2023,
+            "genre": "Hip Hop",
+            "duration": "1:45:00"
         }
     ]
 }

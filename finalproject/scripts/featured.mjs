@@ -1,25 +1,44 @@
+// get all the featured members from the JSON file
+export const getPlaylistData = async () => {
+    try {
+        const response = await fetch("data/playlists.json");
+        if (!response.ok) {
+            throw new Error("Error fetching data");
+        }
+        const data = await response.json();
+        return data.playlists;
+    } catch (error) {
+        console.error("Error fetching playlist data:", error);
+    }
+};
+
 // shows featured data on the home page
 const showFeaturedData = async (featured) => {
-    const response = await fetch("data/playlists.json");
-    if (!response.ok) {
-        throw new Error("Network response was not ok");
-    }
-    const data = await response.json();
+    try {
+    // get the featured members data
+        const featuredData = await getPlaylistData();
+        if (!featuredData || featuredData.length === 0) {
+            console.error("No featured members found.");
+            return;
+        }
+        // if featured is true, only show if on home page
+        if (featured) {
+            // if featured show 3 random ones on home screen
+            const featuredMembers = featuredData.filter(
+                (member) => member.featured === true
+            );
 
-    // get only gold and silver members if on home page
-    if (featured) {
-        // if featured show 3 random ones on home screen
-        const featuredMembers = data.playlists.filter(
-            (member) => member.featured === true
-        );
-        // randomize and limit the spotlight members
-        featuredMembers.sort(() => Math.random() - 0.5);
-        featuredMembers.length = Math.min(featuredMembers.length, 3); // limit to 3 members
+            // randomize and limit the spotlight members
+            featuredMembers.sort(() => Math.random() - 0.5);
+            featuredMembers.length = Math.min(featuredMembers.length, 3); // limit to 3 members
 
-        displayMembers(featuredMembers);
-    } else {
-        // show all members - on featured page
-        displayMembers(data.playlists);
+            displayMembers(featuredMembers);
+        } else {
+            // show all members - on featured page
+            displayMembers(featuredData.playlists);
+        }
+    } catch (error) {
+        console.error("Error loading featured data:", error);
     }
 };
 
@@ -40,5 +59,6 @@ const displayMembers = (members) => {
         .join("");
     cards.innerHTML = cardTemplate;
 };
+
 
 export default showFeaturedData;
