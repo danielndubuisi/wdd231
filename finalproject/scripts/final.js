@@ -22,13 +22,15 @@ if (document.querySelector(".thank") && displayFormInfo) {
 
 // if on the playlist page, display playlists
 if (document.querySelector(".playlist-grid")) {
-    import("./playlist.mjs").then((module) => {
-        module.default(); // Call the default export function to display playlists
-    }).catch((error) => {
-        console.error("Error loading playlist module:", error);
-    });
+    import("./playlist.mjs")
+        .then((module) => {
+            module.default(); // Call the default export function to display playlists
+        })
+        .catch((error) => {
+            console.error("Error loading playlist module:", error);
+        });
 }
 
-if (document.querySelector('.visit')) {
+if (document.querySelector("#visit")) {
     displayLastVisitMessage();
 }

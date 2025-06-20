@@ -1,4 +1,4 @@
-const visitInfo = document.querySelector(".visit");
+const visitInfo = document.querySelector("#visit");
 
 // get user last visit time and store in local storage
 let lastVisit = window.localStorage.getItem("lastVisit");
