@@ -195,39 +195,4 @@
         max-width: 600px;
         padding: 1rem;
     }
-
-    dialog::backdrop {
-        background: rgba(0, 0, 0, 0.7);
-    }
-
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1000;
-        left: 0;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        overflow: auto;
-        background: rgba(0, 0, 0, 0.7);
-        justify-content: center;
-        align-items: center;
-    }
-
-    .modal[style*="display: block"] {
-        display: flex;
-    }
-
-    .modal-content {
-        background: #222;
-        color: #fff;
-        margin: auto;
-        padding: 2.5rem 2rem 2rem 2rem;
-        border-radius: 0.7rem;
-        max-width: 500px;
-        width: 100%;
-        box-shadow: 0 4px 32px rgba(0, 0, 0, 0.4);
-        position: relative;
-        animation: modalIn 0.3s;
-    }
 }
