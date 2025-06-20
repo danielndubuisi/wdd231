@@ -693,7 +693,7 @@ footer {
 
 .contact-info p {
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--primary-color);
 }
 
@@ -704,8 +704,15 @@ footer {
     border-radius: 50%;
 }
 
-.footer-text {
+footer a {
     font-size: 0.8rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+    transition: color 0.3s ease-in-out;
 }
 
 #currYear {
@@ -731,5 +738,6 @@ footer {
 
 em {
     font-style: italic;
-    color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 0.7rem;
 }

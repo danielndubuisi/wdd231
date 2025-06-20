@@ -2,6 +2,7 @@
 import handleNavigation from "./nav.mjs";
 import showFeaturedData from "./featured.mjs";
 import displayFormInfo from "./thanks.mjs";
+import displayLastVisitMessage from "./storage.mjs";
 
 const currYear = document.querySelector("#currYear");
 currYear.textContent = new Date().getFullYear();
@@ -26,4 +27,8 @@ if (document.querySelector(".playlist-grid")) {
     }).catch((error) => {
         console.error("Error loading playlist module:", error);
     });
+}
+
+if (document.querySelector('.visit')) {
+    displayLastVisitMessage();
 }
