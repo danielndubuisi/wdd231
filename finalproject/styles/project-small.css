@@ -38,7 +38,6 @@ header {
 main {
     grid-column: 1 / 3;
     margin: 0 auto;
-    align-self: center;
 }
 
 section {
@@ -508,6 +507,7 @@ nav ul.show {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     padding: 2rem;
+    min-height: 100vh;
 }
 
 .playlist-card {
@@ -516,6 +516,7 @@ nav ul.show {
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 300px;
 }
 
 .playlist-card:hover {
@@ -526,6 +527,7 @@ nav ul.show {
 .playlist-card img {
     width: 100%;
     height: 160px;
+    aspect-ratio: 16/9;
     object-fit: cover;
 }
 
@@ -588,7 +590,6 @@ dialog {
 ::backdrop {
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 
 .modal[style*="display: block"] {
     display: flex;
