@@ -61,46 +61,6 @@
         gap: 1rem;
     }
 
-    /* discover page styles */
-    .discover-page {
-        background-image: none;
-    }
-    .discover-grid {
-        display: grid;
-        grid-template-columns: 1fr 1.2fr;
-        align-items: stretch;
-        width: 80%;
-        margin: 0 auto;
-        background: var(--primary-dark-background);
-        border-radius: 1.2rem;
-        box-shadow: 0 4px 32px rgba(0, 0, 0, 0.18);
-        overflow: hidden;
-    }
-
-    .discover-img {
-        display: block;
-    }
-
-    .discover-grid img {
-        width: 100%;
-        height: 100%;
-        min-height: 350px;
-        max-height: 600px;
-        object-fit: cover;
-        border-radius: 0;
-        display: block;
-    }
-
-    .discover-grid .discover-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 2.5rem 2.5rem 2.5rem 2rem;
-        color: #fff;
-        background: none;
-        height: 100%;
-    }
-
     /* feedback section styles */
     .feedback p {
         max-width: 400px;
