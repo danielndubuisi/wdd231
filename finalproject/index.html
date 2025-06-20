@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Daniel Ndubuisi" />
         <meta
@@ -40,19 +40,22 @@
     </head>
     <body>
         <!-- header -->
-        <header>
+        <header class="flex-center gap-1 padded-lg">
             <!-- My logo -->
-            <div class="logo">
-                <img src="images/logo.webp" alt="website-logo" />
+            <div class="logo flex-center gap-1">
+                <img
+                    src="images/logo.webp"
+                    alt="website-logo"
+                    class="rounded-full" />
                 <div class="logo-text">
                     <span>SoundSphere</span>
                 </div>
             </div>
-            <nav>
+            <nav class="flex-center gap-1">
                 <!-- menu icon -->
                 <button id="menu" aria-label="menu-button"></button>
                 <!-- page navigation -->
-                <ul>
+                <ul class="flex-center gap-1">
                     <li>
                         <a href="index.html" class="nav-link active">Home</a>
                     </li>
@@ -68,9 +71,12 @@
         <!-- main content -->
         <main>
             <!-- hero section -->
-            <div class="hero">
-                <img src="images/hero.webp" alt="hero-img" />
-                <div class="hero-text">
+            <div class="hero flex-center w-full">
+                <img
+                    src="images/hero.webp"
+                    alt="hero-img"
+                    class="w-full rounded" />
+                <div class="hero-text flex-col gap-1">
                     <h1>Explore the Sphere</h1>
                     <p>
                         Discover new tracks, share your favorites, and connect
@@ -79,12 +85,11 @@
                     <a href="playlist.html" class="start-btn"> Get Started </a>
                 </div>
             </div>
-
             <div>
                 <!-- discover section -->
-                <section class="discover">
+                <section class="discover card flex-col gap-1 padded-lg">
                     <h2>Discover New Tracks!</h2>
-                    <div class="discover-text">
+                    <div class="discover-text text-center">
                         <b
                             >Explore a vast library of music from around the
                             world.</b
@@ -96,76 +101,75 @@
                     </div>
                     <a href="playlist.html" class="listen-btn">Discover</a>
                 </section>
-
                 <!-- featured playlist section -->
-                <section class="featured">
+                <section class="featured card flex-col gap-1 padded-lg">
                     <h2>Featured Playlists</h2>
                     <p>
                         The trendiest songs around the world curated into
                         playlists to suit every style!
                     </p>
-                    <div class="cards"></div>
+                    <div class="cards grid-center gap-2 w-full"></div>
                 </section>
                 <!-- community feedback section -->
-                <section class="feedback">
+                <section class="feedback card flex-col gap-1 padded-lg">
                     <h2>SoundSphere community</h2>
                     <p>
                         Here are a few remarks from our users. Top community
                         members get rewarded.
                     </p>
-                    <div class="feedback-details">
-                        <div class="detail">
+                    <div class="feedback-details flex-center gap-2">
+                        <div
+                            class="detail flex-center gap-1 rounded shadow padded">
                             <img
                                 src="images/feedback-img.webp"
                                 alt="feedback-img"
-                                loading="lazy" />
-                            <div class="detail-text">
+                                loading="lazy"
+                                class="rounded-full" />
+                            <div class="detail-text flex-col">
                                 <h4>Mary Jane</h4>
                                 <p>
                                     I love soundsphere. I can finally curate my
                                     own playlists and share offline.
                                 </p>
                             </div>
-                            <div>
-                                <span class="stars">★★★★★</span>
-                            </div>
+                            <div><span class="stars">★★★★★</span></div>
                         </div>
-                        <div class="detail">
+                        <div
+                            class="detail flex-center gap-1 rounded shadow padded">
                             <img
                                 src="images/feedback-img1.webp"
                                 alt="feedback-img"
-                                loading="lazy" />
-                            <div class="detail-text">
+                                loading="lazy"
+                                class="rounded-full" />
+                            <div class="detail-text flex-col">
                                 <h4>Dan Som</h4>
                                 <p>
                                     I just discovered new artists on the
                                     playlists. Still vibing.
                                 </p>
                             </div>
-                            <div>
-                                <span class="stars">★★★★☆</span>
-                            </div>
+                            <div><span class="stars">★★★★☆</span></div>
                         </div>
-                        <div class="detail">
+                        <div
+                            class="detail flex-center gap-1 rounded shadow padded">
                             <img
                                 src="images/feedback-img2.webp"
                                 alt="feedback-img"
-                                loading="lazy" />
-                            <div class="detail-text">
+                                loading="lazy"
+                                class="rounded-full" />
+                            <div class="detail-text flex-col">
                                 <h4>Luke Gary</h4>
                                 <p>
                                     Music history on here means I can trace the
                                     roots of my favorite genres. Awesome!
                                 </p>
                             </div>
-                            <div>
-                                <span class="stars">★★★★★</span>
-                            </div>
+                            <div><span class="stars">★★★★★</span></div>
                         </div>
                     </div>
                 </section>
                 <!-- join community section -->
-                <section class="community card">
+                <section class="community card flex-col gap-1 padded-lg mt-2">
                     <h2>Join Community!</h2>
                     <p>
                         Join our community & never miss a new release. Follow Us
@@ -176,18 +180,25 @@
             </div>
         </main>
         <!-- footer -->
-        <footer>
-            <div class="contact-info">
-                <div>
-                    <p>info@soundsphere.org</p>
-                </div>
-                <div class="socials">
-                    <img src="images/youtube.webp" alt="youtube" />
-                    <img src="images/twitter.webp" alt="twitter" />
-                    <img src="images/linkedin.webp" alt="linkedIn" />
+        <footer class="flex-col gap-1 padded-lg">
+            <div class="contact-info flex-center gap-1">
+                <div><p>info@soundsphere.org</p></div>
+                <div class="socials flex-center gap-1">
+                    <img
+                        src="images/youtube.webp"
+                        alt="youtube"
+                        class="rounded-full" />
+                    <img
+                        src="images/twitter.webp"
+                        alt="twitter"
+                        class="rounded-full" />
+                    <img
+                        src="images/linkedin.webp"
+                        alt="linkedIn"
+                        class="rounded-full" />
                 </div>
             </div>
-            <div class="footer-text">
+            <div class="footer-text text-center mt-1">
                 <p>
                     &copy;<span id="currYear"></span> | Daniel Tochukwu Ndubuisi
                     | SoundSphere

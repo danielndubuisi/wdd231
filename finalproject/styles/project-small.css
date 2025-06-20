@@ -67,6 +67,63 @@ li a {
     font-weight: 500;
 }
 
+/* Utility classes for reuse across project */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.grid-center {
+    display: grid;
+    place-items: center;
+}
+.rounded {
+    border-radius: 0.5rem;
+}
+.rounded-full {
+    border-radius: 50%;
+}
+.shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.shadow-lg {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.text-center {
+    text-align: center;
+}
+.text-start {
+    text-align: start;
+}
+.padded {
+    padding: 1rem;
+}
+.padded-lg {
+    padding: 2rem;
+}
+.mt-1 {
+    margin-top: 1rem;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.gap-1 {
+    gap: 1rem;
+}
+.gap-2 {
+    gap: 2rem;
+}
+.w-full {
+    width: 100%;
+}
+.h-full {
+    height: 100%;
+}
+
 /* ---------- header & nav styles ------------- */
 .logo {
     display: flex;
